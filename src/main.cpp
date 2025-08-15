@@ -1,6 +1,8 @@
 #include "utilities.h"
 #include "filetypes.h"
 
+extern bool DEBUG;
+
 int main(int argc, char** argv)
 {
     // identify type of data coming in:  MD simulation, QM/MM, Optimization, Single Point, etc.
@@ -20,6 +22,10 @@ int main(int argc, char** argv)
         if (fs::exists(argv[i]))
         {
             files.AddFile(std::to_string(i),argv[i]);
+        }
+        else if (argv[i] == "--debug")
+        {
+            DEBUG=true;
         }
         else
         {

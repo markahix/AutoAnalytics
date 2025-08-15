@@ -23,9 +23,10 @@
 
 namespace fs = std::experimental::filesystem;
 
-
+extern bool DEBUG;
 void error_log(std::string message,int exit_code);
 void normal_log(std::string message);
+void debug_log(std::string message);
 
 namespace utils
 {
@@ -42,7 +43,6 @@ namespace utils
     std::string GetTimeAndDate();
     int is_empty(const char *s);
     std::string LastLineOfFile(std::string filename);
-    void mdout_to_csv(std::string filename,std::string csv_file);
     int count_lines_in_file(std::string filename);
     std::string string_between(std::string incoming, std::string first_delim, std::string second_delim);
     void compress_and_delete(std::string directory);
