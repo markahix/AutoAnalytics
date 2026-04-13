@@ -5,3 +5,8 @@ This application identifies and performs a number of common analyses for classic
 ### AGIMUS Integration
 
 When installed as part of the AGIMUS suite, AutoAnalytics can be called by AutoMD, AutoQuantum, or DataSetBuilder while also using FeatureFinder to identify additional analyses which may be of interest.
+
+
+### To Do:
+
+Integrate system-specific $\pi-\pi$ stacking analyses based on [AmberHub Guide](https://amberhub.chpc.utah.edu/stacking-percentage-protein-ligand-complex/)
